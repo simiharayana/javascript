@@ -1,0 +1,74 @@
+<!-- html events are "things" that happens to to html elements-->
+<!-- when js is used  in html pages,javascript can "react" on this events  -->
+
+
+<!--an event  can be somthing the browser doesor somthing a user does-->
+<!-- EXAMPLES :--> 
+<!-- an html web pages has finished the loading 
+an html input was changed
+an html element was Clicked
+often ,when events happens,you may want to do somthing --> 
+
+
+
+<!-- 4 ways of writing Events in javascript:
+1: using  (addEventListner and IE'S attachEvent) -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Defferent Events in javascript</h1>
+        <div class="button_container">
+            <div class="button_su">
+                <span class="su_button_inner"></span>
+                <a href="#" class="su_button_inner" onclick="alert('hello user please use me also!!!!')"></a>
+                <span class="button_text_container">
+                     Simple inline alert()
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="button_su">
+        <span class="su_button_circle">
+        <a href="#" class="button_su_circle" onclick="callingFunction()">
+        <span class="button_text_container">
+            By Calling Function
+        </span>
+        </a>
+        </span>
+    </div>
+
+
+    <div class="button_su">
+        <span class="su_button_circle">
+        </span>
+        <a href="#" class="button_su_inner">
+            <span class="button_text_container">
+                Inline events
+            </span>
+        </a>
+    </div>
+    
+    <div class="button_su">
+        <span class="su_button_circle">
+        </span>
+        <a class="button_su_inner" id="fourtway">
+            <span class="button_text_container">
+                Event Listeners
+            </span>
+        </a>
+    </div>
+</body>
+</html>

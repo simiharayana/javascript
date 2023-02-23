@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    p,form{
+        text-align: center;
+    }
+    .para{
+        text-align: center;
+    }
+    #heading{
+        text-align: center;
+        padding: top 4px;;
+    }
+    button{
+        text-align: center;
+        color: blue;
+        background-color: aquamarine;
+        cursor: pointer;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <p class="para">Hello User</p>
+    <p class="para">plz share this vidieo</p>
+    <p>Welcome to javascript tutorial</p>
+    <h1 id="heading">chaged the content of the h1</h1><br>
+
+
+    <form action="" style="text-align: center;">
+        <label for="">male</label>
+        <input type="radio" name="gender" id="">
+        <label for="">female</label>
+        <input type="radio" name="gender" id="">
+        <label for="">malefemale</label>
+        <input type="radio" name="gender" id="">
+
+
+    </form><br>
+
+
+    <button onclick="changecontent()">Click here</button>
+    
+    <script>
+        const changecontent=()=>{
+            // document.getElementById("heading").innerHTML="hello users how is your study going!!!!!!"
+        // }
+
+
+        // console.log(document.getElementsByClassName("para"));
+        // console.log(document.getElementsByTagName("p"));
+        // console.log(document.getElementsByName("gender"));
+
+        // document.querySelector(".para").innerHTML="yehhh!!! i changed the content again...."
+        console.log(document.querySelectorAll(".para"))
+
+        }
+
+    //    querySelector returns the frist matching value whereas
+    // querySelectorAll returns all elements
+    </script>
+    
+</body>
+</html>
